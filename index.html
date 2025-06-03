@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=https://github.com/catalystbyzoho">
+  <script>
+    // JavaScript redirect preserving the path and query string
+    (function() {
+      const newDomain = "https://github.com/catalystbyzoho";
+      const path = window.location.pathname;
+      const query = window.location.search;
+      const hash = window.location.hash;
+      window.location.replace(newDomain + path + query + hash);
+    })();
+  </script>
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>If you are not redirected automatically, <a id="redirectLink" href="#">click here</a>.</p>
+  <script>
+    document.getElementById('redirectLink').href = "https://github.com/catalystbyzoho" + window.location.pathname + window.location.search + window.location.hash;
+  </script>
+</body>
+</html>
